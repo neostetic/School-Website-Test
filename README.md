@@ -11,6 +11,7 @@
  - **Website:** https://neostetic.github.io/School-Website-Test/
 #### Download Content
  - **License:** [LICENSE](./LICENSE)
+ - **PDF:** [download](./Demo%20_%20SPSMB.cz.pdf)
 #### Install
  - Installation via **nodejs** and **npm**
 ```
