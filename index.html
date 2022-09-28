@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
     <meta charset="UTF-8">
     <title>Demo | SPSMB.cz</title>
     <link rel="stylesheet" href="res/style/main.css">
-    <link rel="stylesheet" href="res/style/loader.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/00bb7dbf9c.js" crossorigin="anonymous"></script>
 </head>
@@ -12,20 +11,23 @@
 <div id="container">
     <div class="header" id="header">
         <div class="auto-width">
-            <div class="header-left flex-center-middle">
-                <a href="./index.html" class="header-a flex-center-middle">
-                    <img src="res/assets/logo_white.png" height="32"/>
+            <div class="header-left">
+                <a href="./index.html" class="flex-center">
+                    <img src="res/assets/logo_white.png" class="header-img"/>
                     <span class="header-left-text"></span>
                 </a>
             </div>
-            <div class="header-right flex-center-middle">
-                <a href="#" id="header-right-menu-button" class="header-a button-hover flex-center-middle"><i
-                        class="fa-solid fa-bars"></i></a>
-                <a href="#" class="header-a button-hover flex-center-middle more-caret-down">Aktuality</a>
-                <a href="#" class="header-a button-hover flex-center-middle more-caret-down">O škole</a>
-                <a href="#" class="header-a button-hover flex-center-middle more-caret-down">Pro uchazeče</a>
-                <a href="#" class="header-a button-hover flex-center-middle more-caret-down">Pro žáky a rodiče</a>
-                <a href="#" class="header-a button-hover flex-center-middle">Kontakty</a>
+            <div class="header-right flex-center">
+                <a href="#" class="header-a link-drop-span link-drop-icon">Aktuality</a>
+                <a href="#" class="header-a link-drop-span link-drop-icon">O škole</a>
+                <a href="#" class="header-a link-drop-span link-drop-icon">Pro uchazeče</a>
+                <a href="#" class="header-a link-drop-span link-drop-icon">Pro žáky a rodiče</a>
+                <a href="#" class="header-a link-drop-span">Kontakty</a>
+                <div class="header-search">
+                    <input id="searchInput" placeholder="Hledaný text..."/>
+                    <a href="#" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <a href="#" class="header-a link-drop-span"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
     </div>
@@ -34,259 +36,271 @@
             <div class="content-image-image">
             </div>
         </div>
-        <div class="auto-width content-separator">
-            <div class="content-separator-left">
-                <div>
-                    <h2>Vyhledávání</h2>
-                    <div class="search-bar">
-                        <input placeholder="Hledaný text..."/>
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
+        <div class="auto-width content-split">
+            <div class="content-split-left">
+                <div class="split-card">
+                    <h2>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        Nejnovější aktuality
+                    </h2>
+                    <a class="link link-swipe" href="#">Maturitní zkoušky 2023</a>
+                    <a class="link link-swipe" href="#">Zahájení školního roku 2022/2023</a>
+                    <a class="link link-swipe" href="#">Pracovní doba o prázdninách</a>
+                    <a class="link link-swipe" href="#">Střední průmyslová škola vyhlašuje so...</a>
+                    <a class="link link-swipe" href="#">Schůzky s rodiči budoucích 1. ročníků...</a>
+                    <a class="link link-swipe" href="#">Ukončení 2. kola přijímacího řízení</a>
+                    <a class="link link-swipe" href="#">Vzdálený přístup k souborům</a>
+                    <a class="link link-swipe" href="#">Pozvánka na slavnostní vyřazení absol...</a>
                 </div>
-                <div>
-                    <h2>Užitečné odkazy</h2>
-                    <a class="content-separator-a link-hover" href="#">Rozvrh hodin</a>
-                    <a class="content-separator-a link-hover" href="#">Přijímací řízení</a>
-                    <a class="content-separator-a link-hover" href="#">Maturitní zkoušky</a>
-                    <a class="content-separator-a link-hover" href="#">Plán školního roku</a>
-                    <a class="content-separator-a link-hover" href="#">Informace o studiu na VŠ</a>
-                    <a class="content-separator-a link-hover" href="#">Uplatnění pro absolventy</a>
-                    <a class="content-separator-a link-hover" href="#">Vzdálený přístup k souborům</a>
-                    <a class="content-separator-a link-hover" href="#">English version</a>
+                <div class="split-card">
+                    <h2>
+                        <i class="fa-regular fa-bookmark"></i>
+                        Užitečné odkazy
+                    </h2>
+                    <a class="link link-swipe" href="#">Rozvrh hodin</a>
+                    <a class="link link-swipe" href="#">Přijímací řízení</a>
+                    <a class="link link-swipe" href="#">Maturitní zkoušky</a>
+                    <a class="link link-swipe" href="#">Plán školního roku</a>
+                    <a class="link link-swipe" href="#">Informace o studiu na VŠ</a>
+                    <a class="link link-swipe" href="#">Uplatnění pro absolventy</a>
+                    <a class="link link-swipe" href="#">Vzdálený přístup k souborům</a>
+                    <a class="link link-swipe" href="#">English version</a>
                 </div>
-                <div>
-                    <h2>Máme Facebook</h2>
-                    <a href="https://www.facebook.com/spsmb.cz/" target="_blank" class="btn-facebook">
+                <div class="split-card">
+                    <h2>
+                        <i class="fa-solid fa-link"></i>
+                        Jsme na Facebooku
+                    </h2>
+                    <a href="#" class="btn-facebook">
                         <i class="fa-brands fa-facebook-f"></i>
                         Facebook
                     </a>
                 </div>
-                <div>
-                    <h2>Stáž v zahraničí</h2>
-                    <div class="content-separator-gap">
-                        <img src="res/assets/erasmus-logo.png" height="50" width="249"/>
-                        <p class="content-separator-p">
-                            V rámci vzdělávacího programu Erasmus+ absolvují vybraní studenti zahraniční stáž v Anglii
-                            nebo v Irsku. Stáži předchází přípravné hodiny angličtiny. Třítýdenní pobyt je plně hrazen z
-                            prostředků projektu.
-                        </p>
-                        <a class="content-separator-a link-hover" href="#">Více o Erasmu</a>
-                    </div>
+                <div class="split-card">
+                    <h2>
+                        <i class="fa-solid fa-earth-europe"></i>
+                        Stáž v zahraničí
+                    </h2>
+                    <p>
+                        <img src="res/assets/erasmus-logo.png" height="45"/><br>
+                        V rámci vzdělávacího programu Erasmus+ absolvují vybraní studenti zahraniční stáž v Anglii nebo
+                        v
+                        Irsku. Stáži předchází přípravné hodiny angličtiny. Třítýdenní pobyt je plně hrazen z prostředků
+                        projektu.
+                        <br><br>
+                        <a class="link link-swipe" href="#">Více o Erasmu</a>
+                    </p>
                 </div>
-                <div>
-                    <h2>Zařizovatel školy</h2>
-                    <div class="content-separator-gap">
-                        <p class="content-separator-p">
-                            Střední průmyslová škola, Mladá Boleslav, Havlíčkova 456 je příspěvková organizace zřizovaná
-                            Středočeským krajem.
-                        </p>
-                        <a href="https://www.kr-stredocesky.cz/" target="_blank">
-                            <img src="res/assets/stredoceskykraj.png" height="32" width="180"/>
-                        </a>
-                        <a href="https://www.fs.tul.cz" target="_blank">
-                            <img src="res/assets/fakultni_skola_fakulty_strojni.png" height="47" width="250"/>
-                        </a>
-                        <a href="https://www.fm.tul.cz" target="_blank">
-                            <img src="res/assets/logo_partnerstvi_fakultni_skola.png" height="250" width="250"/>
-                        </a>
-                    </div>
+                <div class="split-card">
+                    <h2>
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        Zřizovatel školy
+                    </h2>
+                    <p>
+                        Střední průmyslová škola, Mladá Boleslav, Havlíčkova 456 je příspěvková organizace zřizovaná
+                        Středočeským krajem.
+                        <br><br>
+                    </p>
                 </div>
+                <img src="res/assets/stredoceskykraj.png" width="180"/>
+                <img src="res/assets/fakultni_skola_fakulty_strojni.png" width="180"/>
+                <img src="res/assets/logo_partnerstvi_fakultni_skola.png" width="180"/>
             </div>
-            <div class="content-separator-right">
-                <div class="content-card">
-                    <h1>Simple Title</h1>
-                    <div class="content-card-properties">
-                        <a href="#" class="properties-date">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            24.12.2022
-                        </a>
-                        <a href="#" class="properties-author">
-                            <i class="fa-solid fa-user"></i>
-                            Filip Novák
-                        </a>
-                        <a href="#" class="properties-tag">
-                            <i class="fa-solid fa-tag"></i>
-                            Důležitá sdělení
-                        </a>
+            <div class="content-split-right">
+                <div class="posts">
+                    <div class="post-card">
+                        <h2>Zahájení školního roku 2022/2023</h2>
+                        <div class="post-card-properties">
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                24.8.2022
+                            </a>
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                Věra Svárovská
+                            </a>
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-tag"></i>
+                                Důležitá sdělení
+                            </a>
+                        </div>
+                        <p>
+                            Nový školní rok začíná dne 1. 9. 2022 od 7:55 hod. Žáci se sejdou ve svých kmenových
+                            učebnách. Seznamy učeben a žáků ve třídách budou vyvěšeny ve vestibulu u hlavního vchodu do
+                            školy.
+                            <br><br>
+                            Nebude probíhat běžná výuka, pouze proběhne zahájení nového školního roku s třídními
+                            učiteli, a to cca do 8.45. Pro první ročníky cca do 10:00.
+                            <br><br>
+                            Všichni žáci mají automaticky přihlášeny obědy. Výdej obědů od 9:30 do 13:00.
+                            <br><br>
+                            Prosíme rodiče, aby do budovy školy studenty nedoprovázeli.
+                            <br><br>
+                            <a href="#" class="link link-swipe">Více informací</a>
+                        </p>
                     </div>
-                    <p class="content-card-p">
-                        Lorem ipsum dolor sit amet, <b>consectetuer adipiscing elit</b>. Etiam posuere lacus quis dolor.
-                        Ut tempus purus at lorem. Integer lacinia. Praesent in mauris eu tortor porttitor accumsan.
-                        <br><br>
-                        Vestibulum erat nulla, ullamcorper nec,rutrum non, nonummy ac, erat. <i>Vivamus luctus egestas
-                        leo.</i> Nullam dapibus fermentum ipsum. Integer vulputate sem a nibh rutrum consequat. <u>Etiam
-                        posuere lacus quis dolor</u>. Sed ac dolor sit amet purus malesuada congue.
-                        <br><br>
-                        <a class="content-card-a link-hover" href="#">Více informací</a>
-                    </p>
-                </div>
-                <div class="content-card">
-                    <h1>Simple Title</h1>
-                    <div class="content-card-properties">
-                        <a href="#" class="properties-date">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            12.12.2000
-                        </a>
-                        <a href="#" class="properties-author">
-                            <i class="fa-solid fa-user"></i>
-                            František Kočí
-                        </a>
-                        <a href="#" class="properties-tag">
-                            <i class="fa-solid fa-tag"></i>
-                            Důležitá sdělení
-                        </a>
+                    <div class="post-card">
+                        <h2>Pracovní doba o prázdninách</h2>
+                        <div class="post-card-properties">
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                1.7.2022
+                            </a>
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                Věra Svárovská
+                            </a>
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-tag"></i>
+                                Důležitá sdělení
+                            </a>
+                        </div>
+                        <p>
+                            Pracovní doba sekretariátu po dobu letních prázdnin:
+                            <br><br>
+                            pondělí 9 – 12 hod.
+                            <br><br>
+                            středa 9 – 12 hod.
+                            <br><br>
+                            Od 25.7.2022 do 5.8.2022 škola uzavřena.
+                            <br><br>
+                            <a href="#" class="link link-swipe">Více informací</a>
+                        </p>
                     </div>
-                    <p class="content-card-p">
-                        Lorem ipsum dolor sit amet, <b>consectetuer adipiscing elit</b>. Etiam posuere lacus quis dolor.
-                        Ut tempus purus at lorem. Integer lacinia. Praesent in mauris eu tortor porttitor accumsan.
-                        <br><br>
-                        Vestibulum erat nulla, ullamcorper nec,rutrum non, nonummy ac, erat. <i>Vivamus luctus egestas
-                        leo.</i> Nullam dapibus fermentum ipsum. Integer vulputate sem a nibh rutrum consequat. <u>Etiam
-                        posuere lacus quis dolor</u>. Sed ac dolor sit amet purus malesuada congue.
-                        <br><br>
-                        <a class="content-card-a link-hover" href="#">Více informací</a>
-                    </p>
-                </div>
-                <div class="content-card">
-                    <h1>Simple Title</h1>
-                    <div class="content-card-properties">
-                        <a href="#" class="properties-date">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            6.6.2003
-                        </a>
-                        <a href="#" class="properties-author">
-                            <i class="fa-solid fa-user"></i>
-                            Michal Kraušner
-                        </a>
-                        <a href="#" class="properties-tag">
-                            <i class="fa-solid fa-tag"></i>
-                            Důležitá sdělení
-                        </a>
+                    <div class="post-card">
+                        <h2>Střední průmyslová škola vyhlašuje soutěž na grafický návrh vzhledu webových stránek školy</h2>
+                        <div class="post-card-properties">
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                27.6.2022
+                            </a>
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                Věra Svárovská
+                            </a>
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-tag"></i>
+                                Jiné
+                            </a>
+                        </div>
+                        <p>
+                            Střední průmyslová škola Mladá Boleslav vyhlašuje veřejnou soutěž na grafický návrh webových stránek školy.
+                            <br><br>
+                            Návrh musí obsahovat grafický manuál – typy písma, velikosti písma, jeho barvu, váhu pro nadpisy úrovně h1 – h4 a pro obyčejný text. Dále specifikovat barvy pozadí a výplní.
+                            <br><br>
+                            Návrh musí splňovat standardy pro responzivní web, musí být obsažen návrh pro PC, tablet a mobilní telefon.
+                            <br><br>
+                            Jedná se o grafiku webových stránek, nikoli o zdrojové kódy.
+                            <br><br>
+                            Případné návrhy na změnu obsahu nebo funkcí webu jsou vítány.
+                            <br><br>
+                            Návrhy zašlete na e-mail: esc‌h@‍spsmb.cz  ve formátu psd rozpracované do jednotlivých vrstev, a to nejpozději do 30.9.2022.
+                            <br><br>
+                            Soutěž bude probíhat ve dvou kolech. Komise zaslané návrhy posoudí a první tři vítězné budou finančně odměněny.
+                            <ol>
+                                <li>místo 5 000,- Kč</li>
+                                <li>místo 3 000,- Kč</li>
+                                <li>místo 1 000,- Kč</li>
+                            </ol>
+                            Případné dotazy zodpoví Ing. Pavel Esch (esch@spsmb.cz)
+                            <br><br>
+                            <a href="#" class="link link-swipe">Více informací</a>
+                        </p>
                     </div>
-                    <p class="content-card-p">
-                        Lorem ipsum dolor sit amet, <b>consectetuer adipiscing elit</b>. Etiam posuere lacus quis dolor.
-                        Ut tempus purus at lorem. Integer lacinia. Praesent in mauris eu tortor porttitor accumsan.
-                        <br><br>
-                        Vestibulum erat nulla, ullamcorper nec,rutrum non, nonummy ac, erat. <i>Vivamus luctus egestas
-                        leo.</i> Nullam dapibus fermentum ipsum. Integer vulputate sem a nibh rutrum consequat. <u>Etiam
-                        posuere lacus quis dolor</u>. Sed ac dolor sit amet purus malesuada congue.
-                        <br><br>
-                        <a class="content-card-a link-hover" href="#">Více informací</a>
-                    </p>
-                </div>
-                <div class="content-card">
-                    <h1>Simple Title</h1>
-                    <div class="content-card-properties">
-                        <a href="#" class="properties-date">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            1.1.2001
-                        </a>
-                        <a href="#" class="properties-author">
-                            <i class="fa-solid fa-user"></i>
-                            Jesse Pinkman
-                        </a>
-                        <a href="#" class="properties-tag">
-                            <i class="fa-solid fa-tag"></i>
-                            Důležitá sdělení
-                        </a>
+                    <div class="post-card">
+                        <h2>Zahájení školního roku 2022/2023</h2>
+                        <div class="post-card-properties">
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                6.6.2022
+                            </a>
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-user"></i>
+                                Věra Svárovská
+                            </a>
+                            <a class="to-grayscale" href="#">
+                                <i class="fa-solid fa-tag"></i>
+                                Důležitá sdělení
+                            </a>
+                        </div>
+                        <p>
+                            Vážení rodiče,
+                            <br><br>
+                            dovolte, abychom Vás pozvali na třídní schůzky budoucích 1. ročníků.
+                            <br><br>
+                            Schůzky se budou konat 22.6.2022 od 15:30 hod.
+                            <br><br>
+                            Ve vestibulu školy budou vyvěšeny informace o zařazení jednotlivých žáků do tříd a číslo přidělené učebny.
+                            <br><br>
+                            <b>Na programu schůzek bude mimo jiné:</b>
+                            <ul>
+                                <li>seznámení s třídním učitelem a vedením školy</li>
+                                <li>doplnění informací o žácích do školní matriky (dotazník, ISIC přihláška, „pasová“ fotografie žáka, dokumenty z Pedagogicko-psychologické poradny apod.)</li>
+                                <li>informace ke školnímu informačnímu systému ŠkolaOnline</li>
+                                <li>informace k ISIC kartám</li>
+                                <li>informace ke stravování a ubytování na domově mládeže</li>
+                                <li>informace k adaptačnímu kurzu</li>
+                                <li>informace k nabídce kroužků plánovaných na nový školní rok</li>
+                                <li>informace k učebnicím a dalšímu nutnému vybavení pro studium</li>
+                            </ul>
+                            Bude nutné vybrat některé poplatky (adaptační kurz apod.), prosím tedy, abyste měli připravenou hotovost cca 800 Kč.
+                            <br><br>
+                            Pokud byste se na schůzky nemohli dostavit osobně, je možné nechat se zastoupit jiným zletilým rodinným příslušníkem.
+                            <br><br>
+                            V případě, že se na schůzky vůbec nemůžete dostavit, dejte nám vědět.
+                            <br><br>
+                            Stejná zpráva byla odeslána i na emailovou adresu uvedenou v přihlášce. Pokud nedorazila, prosíme zkontrolujte spam.
+                            <br><br>
+                            Těšíme se na setkání s Vámi.
+                            <br><br>
+                            <a href="#" class="link link-swipe">Více informací</a>
+                        </p>
                     </div>
-                    <p class="content-card-p">
-                        Lorem ipsum dolor sit amet, <b>consectetuer adipiscing elit</b>. Etiam posuere lacus quis dolor.
-                        Ut tempus purus at lorem. Integer lacinia. Praesent in mauris eu tortor porttitor accumsan.
-                        <br><br>
-                        Vestibulum erat nulla, ullamcorper nec,rutrum non, nonummy ac, erat. <i>Vivamus luctus egestas
-                        leo.</i> Nullam dapibus fermentum ipsum. Integer vulputate sem a nibh rutrum consequat. <u>Etiam
-                        posuere lacus quis dolor</u>. Sed ac dolor sit amet purus malesuada congue.
-                        <br><br>
-                        <a class="content-card-a link-hover" href="#">Více informací</a>
-                    </p>
                 </div>
-                <div class="content-card">
-                    <h1>Simple Title</h1>
-                    <div class="content-card-properties">
-                        <a href="#" class="properties-date">
-                            <i class="fa-solid fa-calendar-days"></i>
-                            14.9.2013
-                        </a>
-                        <a href="#" class="properties-author">
-                            <i class="fa-solid fa-user"></i>
-                            Walter White
-                        </a>
-                        <a href="#" class="properties-tag">
-                            <i class="fa-solid fa-tag"></i>
-                            Důležitá sdělení
-                        </a>
-                    </div>
-                    <p class="content-card-p">
-                        Lorem ipsum dolor sit amet, <b>consectetuer adipiscing elit</b>. Etiam posuere lacus quis dolor.
-                        Ut tempus purus at lorem. Integer lacinia. Praesent in mauris eu tortor porttitor accumsan.
-                        <br><br>
-                        Vestibulum erat nulla, ullamcorper nec,rutrum non, nonummy ac, erat. <i>Vivamus luctus egestas
-                        leo.</i> Nullam dapibus fermentum ipsum. Integer vulputate sem a nibh rutrum consequat. <u>Etiam
-                        posuere lacus quis dolor</u>. Sed ac dolor sit amet purus malesuada congue.
-                        <br><br>
-                        <a class="content-card-a link-hover" href="#">Více informací</a>
-                    </p>
-                </div>
-                <a class="content-card-a link-hover" href="#">
-                    Přečíst všechny aktuality
-                </a>
-            </div>
-        </div>
-        <div class="content-subjects-container">
-            <div class="auto-width">
-                <h1>Studijní obory</h1>
-                <div class="content-subjects">
+                <div class="subjects">
                     <div class="subject-card">
-                        <i class="fa-solid fa-database"></i>
-                        <p class="subject-card-p">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <p>
                             <b>IT systémy ve strojírenství</b>
                             <br><br>
-                            Obor zaměřený na CAD/CAM systémy ve strojírenství. Zaměření na programování CNC strojů a CAD systémy poskytuje žákům rozšířené vědomosti a dovednosti ve vytváření programů pro řízení CNC strojů.
+                            Obor zaměřený na CAD/CAM systémy ve strojírenství. Zaměření na programování CNC strojů a CAD
+                            systémy poskytuje žákům rozšířené vědomosti a dovednosti ve vytváření programů pro řízení
+                            CNC strojů.
                             <br><br>
-                            <a href="#" class="content-card-a link-hover">Více informací</a>
+                            <a href="#" class="link link-swipe">Více informací</a>
                         </p>
                     </div>
                     <div class="subject-card">
                         <i class="fa-solid fa-car-burst"></i>
-                        <p class="subject-card-p">
+                        <p>
                             <b>Management a provoz silniční dopravy</b>
                             <br><br>
-                            Obor zaměřený na automobilovou dopravu. Žáci jsou připravováni pro pracovní pozice typu přejímací technik, dispečer, operátor logistiky, supervizor, koordinátor výroby či servisní technik automobilek.
+                            Obor zaměřený na automobilovou dopravu. Žáci jsou připravováni pro pracovní pozice typu
+                            přejímací technik, dispečer, operátor logistiky, supervizor, koordinátor výroby či servisní
+                            technik automobilek.
                             <br><br>
-                            <a href="#" class="content-card-a link-hover">Více informací</a>
+                            <a href="#" class="link link-swipe">Více informací</a>
                         </p>
                     </div>
                     <div class="subject-card">
                         <i class="fa-solid fa-laptop-code"></i>
-                        <p class="subject-card-p">
+                        <p>
                             <b>Informační technologie</b>
                             <br><br>
-                            Obor připravuje absolventy pro široké uplatnění v oboru IT. Příklady uplatnění absolventů: správce počítačové sítě či podnikového informačního systému, programátor, prodejce hardwaru a softwaru.
+                            Obor připravuje absolventy pro široké uplatnění v oboru IT. Příklady uplatnění absolventů:
+                            správce počítačové sítě či podnikového informačního systému, programátor, prodejce hardwaru
+                            a softwaru.
                             <br><br>
-                            <a href="#" class="content-card-a link-hover">Více informací</a>
+                            <a href="#" class="link link-swipe">Více informací</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+    <div class="footer"></div>
 </div>
-<div id="loader">
-    <div class="lds-facebook">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
+<div id="loader"></div>
 <script src="res/script/main.js"></script>
 </body>
 </html>
