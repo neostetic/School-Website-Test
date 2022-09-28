@@ -18,7 +18,7 @@
 #### Install
  - Installation via **nodejs** and **npm**
 ```
-git clone https://github.com/neostetic/template.git
+git clone https://github.com/neostetic/School-Website-Test.git
 npm i
 npm start
 ```
