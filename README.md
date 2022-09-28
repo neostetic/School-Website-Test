@@ -9,8 +9,6 @@
  - **Name:** School-Website-Test
  - **Version:** 1.0.0
  - **Website:** https://example.com
-#### Dependencies
- - Dependencie
 #### Download Content
  - **License:** [LICENSE](./LICENSE)
 #### Install
