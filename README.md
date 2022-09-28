@@ -3,7 +3,7 @@
 ![image](https://raw.githubusercontent.com/neostetic/neostetic/main/assets/tag_javascript.png)
 ![image](https://raw.githubusercontent.com/neostetic/neostetic/main/assets/tag_css.png)
 
-![image](https://user-images.githubusercontent.com/83291717/192822632-8dbfcb0e-3114-47df-a7ae-37546b8d8624.png)
+![image](https://user-images.githubusercontent.com/83291717/192873189-97fc520a-ac73-4377-9fe3-54b59fa9c17e.png)
 
 #### Information
  - **Name:** School-Website-Test
